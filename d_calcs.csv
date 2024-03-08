@@ -1,0 +1,17 @@
+﻿Tag,Load Type,Maximum Moment Capacity (kft),Maximum Moment Capcity (psi) (Absolute Value),d (in) = [(phi*Mn)/(phi*As*fy)]+a/2,a (in)
+R1,"Roof, Long, Exterior side",-118.1449,1417738.8,15.7351491,2.298717949
+R2,"Roof, Long, Exterior center",-110.6816,1328179.2,14.81375404,2.298717949
+R3,"Roof, Long, Interior side",-213.2528,2559033.6,26.80949542,3.586
+R4,"Roof, Long, Interior Center",-199.1031,2389237.2,25.06261888,3.586
+R5,"Roof, Short, Exterior side",3.7634,45160.8,2.257617284,0.963978495
+R6,"Roof, short, Exterior center",-5.0738,60885.6,2.419395062,0.963978495
+R7,"Roof, Short, Interior side",-4.8569,58282.8,1.478538853,1.757843137
+R8,"Roof, short, Interior center",-5.6413,67695.6,1.575378359,1.757843137
+F1,"Floor, Long, Exterior side",-133.1685,1598022,17.58991453,2.298717949
+F2,"Floor, Long, Exterior center",-123.5951,1483141.2,16.4080133,2.298717949
+F3,"Floor, Long, Interior side",-222.3802,2668562.4,27.93633493,3.586
+F4,"Floor, Long, Interior center",-206.6889,2480266.8,25.9991374,3.586
+F5,"Floor, Short, Exterior side",-7.0543,84651.6,2.663901235,0.963978495
+F6,"Floor, Short, Exterior center",-7.3286,87943.2,2.697765432,0.963978495
+F7,"Floor, Short, Interior side",-6.6978,80373.6,1.705810458,1.757843137
+F8,"Floor, short, Interior Center",-5.2493,62991.6,1.526983297,1.757843137

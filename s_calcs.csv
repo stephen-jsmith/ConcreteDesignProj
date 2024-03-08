@@ -1,0 +1,17 @@
+﻿Tag,Load Type,"Shear Capacity of Stirrups, corrected for Max values (Vs) (Kips)",s (in),1/2 Vs_max,Vs-1/2Vs_max,d/4,d/2,s_max,,"s, corrected (in)",d (in),flag
+R1,"Roof, Long, Exterior side",11.42,18.19,41.37,-29.95,NA,7.87,22,26.78,7.87,15.74,3
+R2,"Roof, Long, Exterior center",48.76,4.01,38.95,9.81,3.7,NA,22,26.78,3.7,14.81,3
+R3,"Roof, Long, Interior side",22.76,15.55,70.48,-47.73,NA,13.4,22,26.78,13.4,26.81,3
+R4,"Roof, Long, Interior Center",86.15,3.84,65.89,20.26,6.27,NA,22,26.78,3.84,25.06,3
+R5,"Roof, Short, Exterior side",0.18,1.13,5.94,-5.76,NA,1.13,22,26.78,1.13,2.26,2
+R6,"Roof, short, Exterior center",12.72,1.21,6.36,6.36,NA,1.21,22,26.78,1.21,2.42,2
+R7,"Roof, Short, Interior side",7.77,2.51,3.89,3.89,0.37,NA,22,26.78,0.37,1.48,3
+R8,"Roof, short, Interior center",8.28,2.51,4.14,4.14,0.39,NA,22,26.78,0.39,1.58,3
+F1,"Floor, Long, Exterior side",13.33,17.42,46.25,-32.92,NA,8.79,22,26.78,8.79,17.59,3
+F2,"Floor, Long, Exterior center",86.28,2.51,43.14,43.14,4.1,NA,22,26.78,2.51,16.41,3
+F3,"Floor, Long, Interior side",24.24,15.21,73.45,-49.2,NA,13.97,22,26.78,13.97,27.94,3
+F4,"Floor, Long, Interior center",136.71,2.51,68.35,68.35,6.5,NA,22,26.78,2.51,26.00,3
+F5,"Floor, Short, Exterior side",14.01,2.51,7,7,0.67,NA,22,26.78,0.67,2.66,3
+F6,"Floor, Short, Exterior center",14.19,2.51,7.09,7.09,0.67,NA,22,26.78,0.67,2.70,3
+F7,"Floor, Short, Interior side",1.11,20.24,4.48,-3.37,NA,0.85,22,26.78,0.43,1.71,3
+F8,"Floor, short, Interior Center",8.03,2.51,4.01,4.01,0.38,NA,22,26.78,0.38,1.53,3

@@ -1,0 +1,368 @@
+\subsection{Roof, Long, Exterior side}Consider a typical Roof, Long, Exterior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $118.1449$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (1417738.8)}{0.9*(3.81)*(60000)} + \frac{2.298717949}{2} = 15.7351491
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 11.42$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 41.37 lbs = -29.95 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{11.42 - -29.95}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 7.87 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*15.74 in}{11.42 kips}=18.19,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 18.19in 
+ \end{equation}
+\subsection{Roof, Long, Exterior center}Consider a typical Roof, Long, Exterior center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $110.6816$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (1328179.2)}{0.9*(3.81)*(60000)} + \frac{2.298717949}{2} = 14.81375404
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 48.76$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 38.95 lbs = 9.81 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{48.76 - 9.81}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 3.7 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*14.81 in}{48.76 kips}=4.01,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 4.01in 
+ \end{equation}
+\subsection{Roof, Long, Interior side}Consider a typical Roof, Long, Interior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $213.2528$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (2559033.6)}{0.9*(3.81)*(60000)} + \frac{3.586}{2} = 26.80949542
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 22.76$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 70.48 lbs = -47.73 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{22.76 - -47.73}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 13.4 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*26.81 in}{22.76 kips}=15.55,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 15.55in 
+ \end{equation}
+\subsection{Roof, Long, Interior Center}Consider a typical Roof, Long, Interior Center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $199.1031$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (2389237.2)}{0.9*(3.81)*(60000)} + \frac{3.586}{2} = 25.06261888
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 86.15$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 65.89 lbs = 20.26 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{86.15 - 20.26}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 3.84 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*25.06 in}{86.15 kips}=3.84,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 3.84in 
+ \end{equation}
+\subsection{Roof, Short, Exterior side}Consider a typical Roof, Short, Exterior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $-3.7634$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (45160.8)}{0.9*(3.81)*(60000)} + \frac{0.963978495}{2} = 2.257617284
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 0.18$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  2 in = 5.94 lbs = -5.76 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{0.18 - -5.76}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 2 in = 1.13 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $0.5 \phi V_{c} < V_{u} = 0.18 < \phi V_{c}$, so $s$ is based on maixmum spacing rules. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{d}{2},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _min(\frac{d}{2} = \frac{2.26 in}{2} = 1.13in, \frac{A_{v}f_{yt}}{0.75\sqrt{f'_{c}}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 1.13in 
+ \end{equation}
+\subsection{Roof, short, Exterior center}Consider a typical Roof, short, Exterior center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $5.0738$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (60885.6)}{0.9*(3.81)*(60000)} + \frac{0.963978495}{2} = 2.419395062
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 12.72$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  2 in = 6.36 lbs = 6.36 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{12.72 - 6.36}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 2 in = 1.21 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $0.5 \phi V_{c} < V_{u} = 12.72 < \phi V_{c}$, so $s$ is based on maixmum spacing rules. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{d}{2},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _min(\frac{d}{2} = \frac{2.42 in}{2} = 1.21in, \frac{A_{v}f_{yt}}{0.75\sqrt{f'_{c}}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 1.21in 
+ \end{equation}
+\subsection{Roof, Short, Interior side}Consider a typical Roof, Short, Interior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $4.8569$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (58282.8)}{0.9*(3.81)*(60000)} + \frac{1.757843137}{2} = 1.478538853
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 7.77$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 3.89 lbs = 3.89 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{7.77 - 3.89}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 0.37 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*1.48 in}{7.77 kips}=2.51,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 2.51in 
+ \end{equation}
+\subsection{Roof, short, Interior center}Consider a typical Roof, short, Interior center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $5.6413$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (67695.6)}{0.9*(3.81)*(60000)} + \frac{1.757843137}{2} = 1.575378359
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 8.28$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 4.14 lbs = 4.14 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{8.28 - 4.14}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 0.39 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*1.58 in}{8.28 kips}=2.51,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 2.51in 
+ \end{equation}
+\subsection{Floor, Long, Exterior side}Consider a typical Floor, Long, Exterior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $133.1685$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (1598022.0)}{0.9*(3.81)*(60000)} + \frac{2.298717949}{2} = 17.58991453
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 13.33$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 46.25 lbs = -32.92 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{13.33 - -32.92}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 8.79 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*17.59 in}{13.33 kips}=17.42,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 17.42in 
+ \end{equation}
+\subsection{Floor, Long, Exterior center}Consider a typical Floor, Long, Exterior center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $123.5951$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (1483141.2)}{0.9*(3.81)*(60000)} + \frac{2.298717949}{2} = 16.4080133
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 86.28$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 43.14 lbs = 43.14 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{86.28 - 43.14}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 2.51 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*16.41 in}{86.28 kips}=2.51,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 2.51in 
+ \end{equation}
+\subsection{Floor, Long, Interior side}Consider a typical Floor, Long, Interior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $222.3802$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (2668562.4)}{0.9*(3.81)*(60000)} + \frac{3.586}{2} = 27.93633493
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 24.24$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 73.45 lbs = -49.2 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{24.24 - -49.2}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 13.97 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*27.94 in}{24.24 kips}=15.21,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 15.21in 
+ \end{equation}
+\subsection{Floor, Long, Interior center}Consider a typical Floor, Long, Interior center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $206.6889$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (2480266.8)}{0.9*(3.81)*(60000)} + \frac{3.586}{2} = 25.9991374
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 136.71$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 68.35 lbs = 68.35 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{136.71 - 68.35}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 2.51 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*26.0 in}{136.71 kips}=2.51,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 2.51in 
+ \end{equation}
+\subsection{Floor, Short, Exterior side}Consider a typical Floor, Short, Exterior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $7.0543$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (84651.6)}{0.9*(3.81)*(60000)} + \frac{0.963978495}{2} = 2.663901235
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 14.01$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 7.0 lbs = 7.0 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{14.01 - 7.0}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 0.67 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*2.66 in}{14.01 kips}=2.51,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 2.51in 
+ \end{equation}
+\subsection{Floor, Short, Exterior center}Consider a typical Floor, Short, Exterior center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $7.3286$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (87943.2)}{0.9*(3.81)*(60000)} + \frac{0.963978495}{2} = 2.697765432
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 14.19$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 7.09 lbs = 7.09 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{14.19 - 7.09}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 0.67 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*2.7 in}{14.19 kips}=2.51,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 2.51in 
+ \end{equation}
+\subsection{Floor, Short, Interior side}Consider a typical Floor, Short, Interior side beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $6.6978$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (80373.6)}{0.9*(3.81)*(60000)} + \frac{1.757843137}{2} = 1.705810458
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 1.11$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 4.48 lbs = -3.37 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{1.11 - -3.37}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 0.43 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*1.71 in}{1.11 kips}=20.24,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 20.24in 
+ \end{equation}
+\subsection{Floor, short, Interior Center}Consider a typical Floor, short, Interior Center beam. From analysis in SAP2000, the beam was found to experience a maximum moment of $5.2493$. The depth $d$ of the Whitney Stress Block can be found with the following equation:
+ \begin{equation}
+                            d = \frac{\phi M_{n}}{\phi A_{s} f_{y}} + \frac{a}{2} = \frac{\phi (62991.6)}{0.9*(3.81)*(60000)} + \frac{1.757843137}{2} = 1.526983297
+                        \end{equation}
+Now that $d$ has been located, shear calculations can begin. From SAP2000, the typical Roof, Long, Exterior Side beam was found to have a max factored applied shear of $\phi * V_{u} = 8.03$. To find the minimum strength needed from shear stirrups, the relationship $V_{u} \leq V_{s} + V_{c}$ can be rewritten as $V_{s} \geq V_{u} - V_{c}$. The shear strength of the beam, $V_{c}$, can be found using the following calculation:
+ \begin{equation} 
+V_{c} = \phi * 2 \lambda \sqrt{f'_{c}(psi)} b_{w} d = V_{c} = 0.75 * 2 * 1 * \sqrt{3000psi} * 12 in *  3 in = 4.01 lbs = 4.01 kips 
+\end{equation}
+With the shear strength of the beam found, the minimum shear strength needed from shear stirrups can be found using the following calculation:
+ \begin{equation} 
+\phi V_{s, min} = \phi V_{u} - \phi V_{c} = \frac{8.03 - 4.01}{\phi = 0.75} = 26.78 kips 
+\end{equation}
+Now that the minimum shear capacity of the stirrups has been determined, the strength limit to allow for a tension controlled failure shall be determined. The maximum shear capacity of the stirrups can be found using the following calculation:
+ \begin{equation} 
+V_{s, max} = 8 \sqrt{f'_{c}} b_{w}d = 8 \sqrt{3000 psi} * 12 in * 3 in = 0.38 kips 
+\end{equation}
+Now that the shear calculations have been finalized, stirrup spacing calculations can begin. In this case, $\phi V_{c} < V_{u}$, so $s$ is based on strength needed to resist shear. As per the tables from the lecture notes, $A_{v,min}$ is not required, so $s$ will be based on 
+ \begin{equation} 
+_{min}(\frac{A_{v}f_{y}d}{V_{s,req}},\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}}
+\end{equation}:
+ \begin{equation} 
+ s = _{min}(\frac{A_{v}f_{y}d}{V_{s,req}} = \frac{0.22 in^2 *60ksi*1.53 in}{8.03 kips}=2.51,\frac{A_{v}f_{yt}(psi)}{0.75\sqrt{f'_{c}(psi)}b_{w}} = \frac{0.22 in^2 *60000psi}{0.75 \sqrt{3000psi}*12in} = 26.78in) = 2.51in 
+ \end{equation}

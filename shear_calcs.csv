@@ -1,0 +1,17 @@
+﻿tag,Load Type,Max Factored Applied Shear (Vu) (kips),Nominal Shear (Vn) (kips),Shear Capacity of Concrete 0.75(Vc) (lbs),Shear Capacity of Concrete 0.75(Vc) (kips),Is Vu<0.5(0.75Vc)?,Is 0.5(0.75Vc)<Vu<0.75(Vc)?,Vu>0.75Vc?,Required Shear Capacity of Stirrups (Vs) (Kips),Max Shear Capacity of Stirrups (Vs_max) (Kips),Half of Max shear,d
+R1,"Roof, Long, Exterior side",24.08,32.10,15513.29,15.51,No,No,Yes,11.42,82.74,41.37,15.74
+R2,"Roof, Long, Exterior center",-21.96,29.28,14604.89,14.60,No,No,Yes,48.76,77.89,38.95,14.81
+R3,"Roof, Long, Interior side",43.50,58.00,26431.50,26.43,No,No,Yes,22.76,140.97,70.48,26.81
+R4,"Roof, Long, Interior Center",-39.90,53.20,24709.25,24.71,No,No,Yes,86.15,131.78,65.89,25.06
+R5,"Roof, Short, Exterior side",2.09,2.79,2225.79,2.23,No,Yes,No,0.18,11.87,5.94,2.26
+R6,"Roof, short, Exterior center",-2.21,2.95,2385.28,2.39,No,Yes,No,6.13,12.72,6.36,2.42
+R7,"Roof, Short, Interior side",7.40,9.87,1457.69,1.46,No,No,Yes,7.93,7.77,3.89,1.48
+R8,"Roof, short, Interior center",-2.38,3.17,1553.17,1.55,No,No,Yes,5.24,8.28,4.14,1.58
+F1,"Floor, Long, Exterior side",27.34,36.45,17341.91,17.34,No,No,Yes,13.33,92.49,46.25,17.59
+F2,"Floor, Long, Exterior center",-25.66,34.21,16176.67,16.18,No,No,Yes,55.78,86.28,43.14,16.41
+F3,"Floor, Long, Interior side",45.73,60.97,27542.45,27.54,No,No,Yes,24.24,146.89,73.45,27.94
+F4,"Floor, Long, Interior center",-43.04,57.39,25632.57,25.63,No,No,Yes,91.57,136.71,68.35,26.00
+F5,"Floor, Short, Exterior side",-3.38,4.51,2626.34,2.63,No,No,Yes,8.01,14.01,7.00,2.66
+F6,"Floor, Short, Exterior center",-3.32,4.42,2659.73,2.66,No,No,Yes,7.97,14.19,7.09,2.70
+F7,"Floor, Short, Interior side",2.52,3.35,1681.76,1.68,No,No,Yes,1.11,8.97,4.48,1.71
+F8,"Floor, short, Interior Center",-2.27,3.03,1505.45,1.51,No,No,Yes,5.04,8.03,4.01,1.53
